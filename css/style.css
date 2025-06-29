@@ -1056,3 +1056,185 @@ html {
     gap: 20px;
   }
 }
+
+
+/* Gallery */
+
+.mfc-gallery-section {
+            background-color: var(--primary-dark);
+            padding: 80px 0;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .mfc-gallery-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .mfc-gallery-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .mfc-gallery-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .mfc-gallery-header p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .mfc-gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .mfc-filter-btn {
+            padding: 10px 25px;
+            border: 2px solid var(--gold);
+            background: transparent;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .mfc-filter-btn:hover,
+        .mfc-filter-btn.active {
+            background: var(--gold);
+            color: var(--primary-dark);
+        }
+
+        .mfc-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .mfc-gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            aspect-ratio: 1;
+            cursor: pointer;
+            /* height: 365px;  */
+          }
+
+        .mfc-gallery-item.equipment {
+            grid-column: span 2;
+            aspect-ratio: 16/9;
+        }
+
+        .mfc-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .mfc-gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .mfc-gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mfc-gallery-item:hover .mfc-gallery-overlay {
+            opacity: 1;
+        }
+
+        .mfc-gallery-overlay h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .mfc-gallery-overlay p {
+            color: var(--gold);
+            font-size: 1rem;
+        }
+
+        /* Lightbox Styles */
+        .mfc-lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            padding: 40px;
+        }
+
+        .mfc-lightbox.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mfc-lightbox img {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+
+        .mfc-lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 10px;
+        }
+
+        @media (max-width: 968px) {
+            .mfc-gallery-item.equipment {
+                grid-column: span 1;
+                aspect-ratio: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mfc-gallery-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .mfc-gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .mfc-filter-btn {
+                padding: 8px 20px;
+                font-size: 0.9rem;
+            }
+        }

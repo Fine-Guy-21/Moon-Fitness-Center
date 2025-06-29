@@ -1,201 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery - Moon Fitness Center</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <style>
-        
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        .mfc-gallery-section {
-            background-color: var(--primary-dark);
-            padding: 80px 0;
-            min-height: 100vh;
-            color: white;
-        }
-
-        .mfc-gallery-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .mfc-gallery-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .mfc-gallery-header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        .mfc-gallery-header p {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.9);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .mfc-gallery-filters {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-
-        .mfc-filter-btn {
-            padding: 10px 25px;
-            border: 2px solid var(--gold);
-            background: transparent;
-            color: white;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .mfc-filter-btn:hover,
-        .mfc-filter-btn.active {
-            background: var(--gold);
-            color: var(--primary-dark);
-        }
-
-        .mfc-gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px 0;
-        }
-
-        .mfc-gallery-item {
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden;
-            aspect-ratio: 1;
-            cursor: pointer;
-        }
-
-        .mfc-gallery-item.equipment {
-            grid-column: span 2;
-            aspect-ratio: 16/9;
-        }
-
-        .mfc-gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .mfc-gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .mfc-gallery-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .mfc-gallery-item:hover .mfc-gallery-overlay {
-            opacity: 1;
-        }
-
-        .mfc-gallery-overlay h3 {
-            color: white;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            text-align: center;
-            padding: 0 15px;
-        }
-
-        .mfc-gallery-overlay p {
-            color: var(--gold);
-            font-size: 1rem;
-        }
-
-        /* Lightbox Styles */
-        .mfc-lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            padding: 40px;
-        }
-
-        .mfc-lightbox.active {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .mfc-lightbox img {
-            max-width: 90%;
-            max-height: 90vh;
-            object-fit: contain;
-        }
-
-        .mfc-lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: white;
-            font-size: 2rem;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 10px;
-        }
-
-        @media (max-width: 968px) {
-            .mfc-gallery-item.equipment {
-                grid-column: span 1;
-                aspect-ratio: 1;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .mfc-gallery-header h1 {
-                font-size: 2.5rem;
-            }
-
-            .mfc-gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            }
-
-            .mfc-filter-btn {
-                padding: 8px 20px;
-                font-size: 0.9rem;
-            }
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- MFC Header -->
     <header class="header">
       <div class="header-content">
@@ -221,119 +44,190 @@
       </div>
     </header>
 
-
-<!-- MFC Image Gallery -->
+    <!-- MFC Image Gallery -->
 
     <section class="mfc-gallery-section">
-        <div class="mfc-gallery-container">
-            <div class="mfc-gallery-header">
-                <h1>Our Facility Gallery</h1>
-                <p>Explore our state-of-the-art equipment, premium facilities, and welcoming environment</p>
-            </div>
-
-            <div class="mfc-gallery-filters">
-                <button class="mfc-filter-btn active" data-filter="all">All</button>
-                <button class="mfc-filter-btn" data-filter="equipment">Equipment</button>
-                <button class="mfc-filter-btn" data-filter="facilities">Facilities</button>
-                <button class="mfc-filter-btn" data-filter="staff">Our Team</button>
-                <button class="mfc-filter-btn" data-filter="location">Location</button>
-            </div>
-
-            <div class="mfc-gallery-grid">
-                <!-- Equipment Section -->
-                <div class="mfc-gallery-item equipment" data-category="equipment">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bg2iXkWRWuwffgzmd5RhiHlxsGcupt.png" alt="Weight Training Area">
-                    <div class="mfc-gallery-overlay">
-                        <h3>Weight Training Area</h3>
-                        <p>State-of-the-art equipment</p>
-                    </div>
-                </div>
-
-                <!-- More Equipment Items -->
-                <div class="mfc-gallery-item equipment" data-category="equipment">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bg2iXkWRWuwffgzmd5RhiHlxsGcupt.png" alt="Cardio Section">
-                    <div class="mfc-gallery-overlay">
-                        <h3>Cardio Section</h3>
-                        <p>Latest cardio machines</p>
-                    </div>
-                </div>
-
-                <!-- Facilities Section -->
-                <div class="mfc-gallery-item" data-category="facilities">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-AxTKlNhj4XliqVD82b2vLwYm74EYKH.png" alt="Relaxation Area">
-                    <div class="mfc-gallery-overlay">
-                        <h3>Relaxation Area</h3>
-                        <p>Unwind and recover</p>
-                    </div>
-                </div>
-
-                <!-- Staff Section -->
-                <div class="mfc-gallery-item" data-category="staff">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nv0IANksCIhkDcFFYbpwPggOoBK9wm.png" alt="Our Trainers">
-                    <div class="mfc-gallery-overlay">
-                        <h3>Expert Trainers</h3>
-                        <p>Professional guidance</p>
-                    </div>
-                </div>
-
-                <!-- Add more gallery items as needed -->
-            </div>
+      <div class="mfc-gallery-container">
+        <div class="mfc-gallery-header">
+          <h1>Our Facility Gallery</h1>
+          <p>
+            Explore our state-of-the-art equipment, premium facilities, and
+            welcoming environment
+          </p>
         </div>
 
-        <!-- Lightbox -->
-        <div class="mfc-lightbox">
-            <button class="mfc-lightbox-close">&times;</button>
-            <img src="/placeholder.svg" alt="Gallery image">
+        <div class="mfc-gallery-filters">
+          <button class="mfc-filter-btn active" data-filter="all">All</button>
+          <button class="mfc-filter-btn" data-filter="equipment">
+            Equipment
+          </button>
+          <button class="mfc-filter-btn" data-filter="facilities">
+            Facilities
+          </button>
+          <button class="mfc-filter-btn" data-filter="staff">Our Team</button>
+          <button class="mfc-filter-btn" data-filter="location">
+            Location
+          </button>
         </div>
+
+        <div class="mfc-gallery-grid">
+          <!-- Equipment Section -->
+          <div class="mfc-gallery-item equipment" data-category="equipment">
+            <img src="images/Equip/eqiup-1.jpg" alt="dumbbell" />
+            <div class="mfc-gallery-overlay">
+              <h3>Dumbbell</h3>
+              <p>equipment</p>
+            </div>
+          </div>
+          <div class="mfc-gallery-item equipment" data-category="facilities">
+            <img src="images/Fac/Staff.jpg" alt="staff" />
+            <div class="mfc-gallery-overlay">
+              <h3>Staff</h3>
+              <p>Facility</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item" data-category="staff">
+            <img src="images/Equip/equip-2.jpg" alt="Dumbbell" />
+            <div class="mfc-gallery-overlay">
+              <h3>Dumbbell</h3>
+              <p>Professional guidance</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item equipment" data-category="equipment">
+            <img src="images/Equip/equip-5.jpg" alt="dumbbell" />
+            <div class="mfc-gallery-overlay">
+              <h3>Dumbbell</h3>
+              <p>equipment</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item" data-category="staff">
+            <img src="images/Equip/equip-3.jpg" alt="Dumbbell" />
+            <div class="mfc-gallery-overlay">
+              <h3>Dumbbell</h3>
+              <p>Professional guidance</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item equipment" data-category="equipment">
+            <img src="images/Equip/equip-4.jpg" alt="dumbbell" />
+            <div class="mfc-gallery-overlay">
+              <h3>Dumbbell</h3>
+              <p>equipment</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item equipment" data-category="equipment">
+            <img src="images/Equip/equip-7.jpg" alt="dumbbell" />
+            <div class="mfc-gallery-overlay">
+              <h3>Dumbbell</h3>
+              <p>equipment</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item" data-category="equipment">
+            <img src="images/Equip/equip-6.jpg" alt="Relaxation Area" />
+            <div class="mfc-gallery-overlay">
+              <h3>Relaxation Area</h3>
+              <p>Unwind and recover</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item equipment" data-category="facilities">
+            <img src="images/Fac/relaxation.jpg" alt="Relaxation Area" />
+            <div class="mfc-gallery-overlay">
+              <h3>Relaxation Area</h3>
+              <p>Unwind and recover</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item " data-category="facilities">
+            <img src="images/Fac/shower.jpg" alt="Relaxation Area" />
+            <div class="mfc-gallery-overlay">
+              <h3>Relaxation Area</h3>
+              <p>Unwind and recover</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item equipment" data-category="facilities">
+            <img src="images/Fac/changing-room.jpg" alt="dumbbell" />
+            <div class="mfc-gallery-overlay">
+              <h3>Dumbbell</h3>
+              <p>equipment</p>
+            </div>
+          </div>
+
+          <div class="mfc-gallery-item equipment" data-category="facilities">
+            <img src="images/Fac/Steam-Sauna.jpg" alt="dumbbell" />
+            <div class="mfc-gallery-overlay">
+              <h3>Dumbbell</h3>
+              <p>equipment</p>
+            </div>
+          </div>
+
+          <!-- Add more gallery items as needed -->
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="mfc-lightbox">
+        <button class="mfc-lightbox-close">&times;</button>
+        <img src="/placeholder.svg" alt="Gallery image" />
+      </div>
     </section>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterBtns = document.querySelectorAll('.mfc-filter-btn');
-            const galleryItems = document.querySelectorAll('.mfc-gallery-item');
-            const lightbox = document.querySelector('.mfc-lightbox');
-            const lightboxImg = lightbox.querySelector('img');
-            const lightboxClose = document.querySelector('.mfc-lightbox-close');
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterBtns = document.querySelectorAll(".mfc-filter-btn");
+        const galleryItems = document.querySelectorAll(".mfc-gallery-item");
+        const lightbox = document.querySelector(".mfc-lightbox");
+        const lightboxImg = lightbox.querySelector("img");
+        const lightboxClose = document.querySelector(".mfc-lightbox-close");
 
-            // Filter functionality
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Remove active class from all buttons
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    // Add active class to clicked button
-                    btn.classList.add('active');
+        // Filter functionality
+        filterBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            // Remove active class from all buttons
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            // Add active class to clicked button
+            btn.classList.add("active");
 
-                    const filter = btn.getAttribute('data-filter');
+            const filter = btn.getAttribute("data-filter");
 
-                    galleryItems.forEach(item => {
-                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
+            galleryItems.forEach((item) => {
+              if (
+                filter === "all" ||
+                item.getAttribute("data-category") === filter
+              ) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
             });
-
-            // Lightbox functionality
-            galleryItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    const imgSrc = item.querySelector('img').src;
-                    lightboxImg.src = imgSrc;
-                    lightbox.classList.add('active');
-                });
-            });
-
-            lightboxClose.addEventListener('click', () => {
-                lightbox.classList.remove('active');
-            });
-
-            lightbox.addEventListener('click', (e) => {
-                if (e.target === lightbox) {
-                    lightbox.classList.remove('active');
-                }
-            });
+          });
         });
+
+        // Lightbox functionality
+        galleryItems.forEach((item) => {
+          item.addEventListener("click", () => {
+            const imgSrc = item.querySelector("img").src;
+            lightboxImg.src = imgSrc;
+            lightbox.classList.add("active");
+          });
+        });
+
+        lightboxClose.addEventListener("click", () => {
+          lightbox.classList.remove("active");
+        });
+
+        lightbox.addEventListener("click", (e) => {
+          if (e.target === lightbox) {
+            lightbox.classList.remove("active");
+          }
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
