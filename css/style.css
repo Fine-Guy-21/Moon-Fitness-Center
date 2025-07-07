@@ -7,13 +7,21 @@
   font-family: Arial, sans-serif;
 }
 
-:root {
+ :root {
   --primary-dark: #1a1a1a;
   --secondary-dark: #2a2a2a;
   --gold: #d4af37;
   --gold-hover: #bf9f30;
-}
+  --white:white;
+}  
 
+/* :root {
+  --primary-dark: #f3efe8;
+  --secondary-dark: #c4c4bf;
+  --gold: #d4af37;
+  --gold-hover: #bf9f30;
+} 
+ */
 html {
     scroll-behavior: smooth;
 }
@@ -61,7 +69,7 @@ html {
   }
 
 .brand-name {
-  color: white;
+  color: var(--white);
   font-size: 2rem;
   font-weight: bold;
   margin-left: 10px;
@@ -74,7 +82,7 @@ html {
 }
 
 .nav-menu li a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
@@ -94,7 +102,7 @@ html {
   display: none;
   background: none;
   border: none;
-  color: white;
+  color: var(--white);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -119,7 +127,7 @@ html {
   align-items: center;
   text-align: center;
   padding: 0 20px;
-  color: white;
+  color: var(--white);
 }
 
 .mfc-hero-tagline {
@@ -137,7 +145,7 @@ html {
 .cta-button {
   padding: 15px 40px;
   background-color: var(--gold);
-  color: white;
+  color: var(--white);
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
@@ -247,7 +255,7 @@ html {
 .mfc-slide-text {
   flex: 1;
   padding: 0 50px;
-  color: white;
+  color: var(--white);
 }
 
 .mfc-slide-text h2 {
@@ -260,13 +268,13 @@ html {
   font-size: 1.1rem;
   margin-bottom: 30px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white);
 }
 
 .mfc-cta-button {
   padding: 12px 30px;
   background-color: var(--gold);
-  color: white;
+  color: var(--white);
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
@@ -283,7 +291,7 @@ html {
   top: 50%;
   transform: translateY(-50%);
   background: transparent;
-  color: white;
+  color: var(--white);
   border: none;
   padding: 15px;
   cursor: pointer;
@@ -294,7 +302,7 @@ html {
 
 .mfc-nav-btn:hover {
   background: rgba(0, 0, 0, 0.8);
-  color: #bf9f30;
+  color:  var(--gold-hover);
 }
 
 .mfc-prev {
@@ -378,7 +386,7 @@ html {
 .mfc-trainers-section {
     background-color: var(--primary-dark);
     padding: 80px 0;
-    color: white;
+    color: var(--white);
 }
 
 .mfc-trainers-container {
@@ -400,7 +408,7 @@ html {
 
 .mfc-trainers-header p {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--white);
 }
 
 .mfc-trainers-grid {
@@ -471,7 +479,7 @@ html {
     height: 35px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    color: white;
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -503,7 +511,7 @@ html {
 .mfc-pricing-section {
     background-color: var(--secondary-dark);
     padding: 80px 0;
-    color: white;
+    color: var(--white);
 }
 
 .mfc-pricing-container {
@@ -525,7 +533,7 @@ html {
 
 .mfc-pricing-header p {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--white);
 }
 
 .mfc-table-wrapper {
@@ -577,7 +585,7 @@ html {
 .package-desc {
     display: block;
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--white);
     font-weight: normal;
     margin-top: 5px;
 }
@@ -585,7 +593,7 @@ html {
 .mfc-pricing-table tbody td:first-child,
 .mfc-pricing-table tbody td:nth-child(2) {
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--white);
 }
 
 /* Daily Pass specific styles */
@@ -631,7 +639,7 @@ html {
 .mfc-testimonials-section {
     background-color: var(--primary-dark, --primary-dark);
     padding: 80px 0;
-    color: white;
+    color: var(--white);
 }
 
 .mfc-testimonials-container {
@@ -654,7 +662,7 @@ html {
 
 .mfc-testimonials-header p {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--white);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -690,7 +698,7 @@ html {
 .mfc-testimonial-text {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--white);
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
@@ -749,7 +757,7 @@ html {
 .mfc-why-section {
   background-color: var(--secondary-dark, --secondary-dark);
   padding: 80px 0;
-  color: white;
+  color: var(--white);
 }
 
 .mfc-why-container {
@@ -772,7 +780,7 @@ html {
 
 .mfc-why-header p {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white);
   max-width: 800px;
   margin: 0 auto;
 }
@@ -825,14 +833,14 @@ html {
 .mfc-why-content p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white);
   margin-bottom: 30px;
 }
 
 .mfc-why-btn {
   padding: 12px 30px;
   background-color: var(--gold);
-  color: white;
+  color: var(--white);
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
@@ -899,7 +907,7 @@ html {
 
 .mfc-footer {
   background-color: var(--primary-dark, --primary-dark);
-  color: white;
+  color: var(--white);
   padding: 80px 0 0;
 }
 
@@ -963,7 +971,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--white);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -1064,7 +1072,7 @@ html {
             background-color: var(--primary-dark);
             padding: 80px 0;
             min-height: 100vh;
-            color: white;
+            color: var(--white);
         }
 
         .mfc-gallery-container {
@@ -1086,7 +1094,7 @@ html {
 
         .mfc-gallery-header p {
             font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.9);
+            color: var(--white);
             max-width: 800px;
             margin: 0 auto;
         }
@@ -1103,7 +1111,7 @@ html {
             padding: 10px 25px;
             border: 2px solid var(--gold);
             background: transparent;
-            color: white;
+            color: var(--white);
             border-radius: 30px;
             cursor: pointer;
             font-size: 1rem;
@@ -1168,7 +1176,7 @@ html {
         }
 
         .mfc-gallery-overlay h3 {
-            color: white;
+            color: var(--white);
             font-size: 1.5rem;
             margin-bottom: 10px;
             text-align: center;
@@ -1209,7 +1217,7 @@ html {
             position: absolute;
             top: 20px;
             right: 20px;
-            color: white;
+            color: var(--white);
             font-size: 2rem;
             cursor: pointer;
             background: none;
