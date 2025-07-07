@@ -198,7 +198,7 @@ html {
 /* Section 2 */
 
 .mfc-features-slider {
-  background-color: var(--secondary-dark, #2a2a2a);
+  background-color: var(--secondary-dark,--secondary-dark);
   padding: 60px 0;
   overflow: hidden;
 }
@@ -265,7 +265,7 @@ html {
 
 .mfc-cta-button {
   padding: 12px 30px;
-  background-color: var(--gold, #d4af37);
+  background-color: var(--gold);
   color: white;
   border: none;
   border-radius: 5px;
@@ -324,7 +324,7 @@ html {
 }
 
 .mfc-dot.active {
-  background: var(--gold, #d4af37);
+  background: var(--gold);
 }
 
 @media (max-width: 968px) {
@@ -629,7 +629,7 @@ html {
 /* Testimonial */
 
 .mfc-testimonials-section {
-    background-color: var(--primary-dark, #1a1a1a);
+    background-color: var(--primary-dark, --primary-dark);
     padding: 80px 0;
     color: white;
 }
@@ -666,7 +666,7 @@ html {
 }
 
 .mfc-testimonial-card {
-    background: var(--secondary-dark, #2a2a2a);
+    background: var(--secondary-dark, --secondary-dark);
     border-radius: 15px;
     padding: 40px 30px;
     position: relative;
@@ -682,7 +682,7 @@ html {
     top: 20px;
     left: 30px;
     font-size: 4rem;
-    color: var(--gold, #D4AF37);
+    color: var(--gold);
     opacity: 0.3;
     font-family: Georgia, serif;
 }
@@ -697,7 +697,7 @@ html {
 }
 
 .mfc-testimonial-rating {
-    color: var(--gold, #D4AF37);
+    color: var(--gold);
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
@@ -713,7 +713,7 @@ html {
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--gold, #D4AF37);
+    border: 2px solid var(--gold);
 }
 
 .mfc-author-info h4 {
@@ -747,7 +747,7 @@ html {
 /* Section 3 */
 
 .mfc-why-section {
-  background-color: var(--secondary-dark, #2a2a2a);
+  background-color: var(--secondary-dark, --secondary-dark);
   padding: 80px 0;
   color: white;
 }
@@ -831,7 +831,7 @@ html {
 
 .mfc-why-btn {
   padding: 12px 30px;
-  background-color: var(--gold, #d4af37);
+  background-color: var(--gold);
   color: white;
   border: none;
   border-radius: 5px;
@@ -898,7 +898,7 @@ html {
 /*  Footer  */
 
 .mfc-footer {
-  background-color: var(--primary-dark, #1a1a1a);
+  background-color: var(--primary-dark, --primary-dark);
   color: white;
   padding: 80px 0 0;
 }
@@ -1238,3 +1238,40 @@ html {
                 font-size: 0.9rem;
             }
         }
+
+.mfc-location {
+  background-color: var(--secondary-dark); /* Uses your CSS variable */
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  padding: 2rem; /* Adds spacing around the map */
+  width: 100%;
+}
+
+/* Responsive map sizing */
+#map {
+  width: 100%; /* Takes full width of parent */
+  max-width: 800px; /* Prevents map from getting too wide */
+  height: 400px; /* Fixed height (adjust if needed) */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Adds depth */
+}
+
+/* Breakpoint adjustments */
+@media (max-width: 968px) {
+  .mfc-location {
+    padding: 1.5rem; /* Slightly less padding */
+  }
+  #map {
+    height: 350px; /* Slightly smaller map */
+  }
+}
+
+@media (max-width: 768px) {
+  .mfc-location {
+    padding: 1rem; /* Minimal padding on small screens */
+  }
+  #map {
+    height: 300px; /* More compact map for mobile */
+  }
+}
