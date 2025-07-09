@@ -452,15 +452,11 @@ html {
 
 .mfc-trainer-name {
     font-size: 1.5rem;
+    color: var(--gold);
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.mfc-trainer-specialty {
-    color: var(--gold);
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
 
 .mfc-trainer-description {
     color: rgba(255, 255, 255, 0.8);
