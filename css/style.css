@@ -66,6 +66,7 @@ html {
 .mfc-logo {
     width: 80px;
     height: 40px;
+    color: antiquewhite;
   }
 
 .brand-name {
@@ -118,7 +119,8 @@ html {
 
 .mfc-hero-section {
   height: 100vh;
-  background:url("../images/index-gyms.jpg");
+  /* background:url("../images/index-gyms.jpg"); */
+  background:url("../images/index-gym.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -206,7 +208,7 @@ html {
 /* Section 2 */
 
 .mfc-features-slider {
-  background-color: var(--secondary-dark,--secondary-dark);
+  background-color: var(--primary-dark);
   padding: 60px 0;
   overflow: hidden;
 }
@@ -384,7 +386,7 @@ html {
 /* Trainers */
 
 .mfc-trainers-section {
-    background-color: var(--primary-dark);
+    background-color: var(--secondary-dark);
     padding: 80px 0;
     color: var(--white);
 }
@@ -413,15 +415,17 @@ html {
 
 .mfc-trainers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
 }
 
 .mfc-trainer-card {
-    background: var(--secondary-dark);
+    background: var(--primary-dark);
+    margin: 20px;
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.753);
 }
 
 .mfc-trainer-card:hover {
@@ -432,6 +436,7 @@ html {
     position: relative;
     height: 400px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .mfc-trainer-image img {
@@ -505,7 +510,7 @@ html {
 /* Pricing */
 
 .mfc-pricing-section {
-    background-color: var(--secondary-dark);
+    background-color: var(--primary-dark);
     padding: 80px 0;
     color: var(--white);
 }
@@ -633,7 +638,7 @@ html {
 /* Testimonial */
 
 .mfc-testimonials-section {
-    background-color: var(--primary-dark, --primary-dark);
+    background-color: var(--secondary-dark);
     padding: 80px 0;
     color: var(--white);
 }
@@ -670,11 +675,13 @@ html {
 }
 
 .mfc-testimonial-card {
-    background: var(--secondary-dark, --secondary-dark);
+    background: var(--primary-dark);
     border-radius: 15px;
     padding: 40px 30px;
     position: relative;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.782);
+
 }
 
 .mfc-testimonial-card:hover {
@@ -748,10 +755,13 @@ html {
 }
 
 
+
+
+
 /* Section 3 */
 
 .mfc-why-section {
-  background-color: var(--secondary-dark, --secondary-dark);
+  background-color: var(--secondary-dark);
   padding: 80px 0;
   color: var(--white);
 }
@@ -791,6 +801,7 @@ html {
   display: flex;
   align-items: center;
   gap: 50px;
+
 }
 
 .mfc-why-feature.reverse {
@@ -902,7 +913,7 @@ html {
 /*  Footer  */
 
 .mfc-footer {
-  background-color: var(--primary-dark, --primary-dark);
+  background-color: var(--secondary-dark);
   color: var(--white);
   padding: 80px 0 0;
 }
