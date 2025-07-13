@@ -144,6 +144,11 @@ html {
   margin-bottom: 40px;
 }
 
+.mfc-hero-section a {
+  text-decoration: none;
+  color: white;
+}
+
 .cta-button {
   padding: 15px 40px;
   background-color: var(--gold);
