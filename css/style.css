@@ -811,6 +811,8 @@ html {
   font-size: 2.2rem;
   margin-bottom: 20px;
   font-weight: bold;
+  color: grey;
+
 }
 
 .mfc-why-content p {
@@ -997,7 +999,7 @@ html {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
