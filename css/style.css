@@ -467,7 +467,7 @@ html {
 }
 
 .mfc-trainer-social {
-  display: flex;
+  display: none;
   justify-content: center;
   gap: 15px;
 }
@@ -1209,45 +1209,44 @@ html {
 }
 
 .mfc-location {
-  background-color: var(--primary-dark); /* Uses your CSS variable */
+  background-color: var(--primary-dark); 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers vertically */
-  justify-content: center; /* Centers horizontally */
-  padding: 2rem; /* Adds spacing around the map */
+  align-items: center; 
+  justify-content: center; 
+  padding: 2rem; 
   width: 100%;
 }
 
-/* Responsive map sizing */
+
 #map {
-  width: 100%; /* Takes full width of parent */
-  max-width: 800px; /* Prevents map from getting too wide */
-  height: 400px; /* Fixed height (adjust if needed) */
-  border-radius: 8px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Adds depth */
+  width: 100%; 
+  max-width: 800px; 
+  height: 400px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
-/* Breakpoint adjustments */
 @media (max-width: 968px) {
   .mfc-location {
-    padding: 1.5rem; /* Slightly less padding */
+    padding: 1.5rem;
   }
   #map {
-    height: 350px; /* Slightly smaller map */
+    height: 350px; 
   }
 }
 
 @media (max-width: 768px) {
   .mfc-location {
-    padding: 1rem; /* Minimal padding on small screens */
+    padding: 1rem; 
   }
   #map {
-    height: 300px; /* More compact map for mobile */
+    height: 300px; 
   }
 }
 
 hr {
   border: 0;
   height: 1.5px;
-  background-color: #2a2a2a;
+  background-color: var(--secondaryText);
 }

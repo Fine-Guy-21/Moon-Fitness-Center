@@ -1,672 +1,672 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Discover Moon Fitness Center, your premier gym in Addis Ababa offering state-of-the-art equipment, diverse classes, and expert trainers."
-    />
-    <title>Moon Fitness Center</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content="Discover Moon Fitness Center, your premier gym in Addis Ababa offering state-of-the-art equipment, diverse classes, and expert trainers."
+      />
+      <title>Moon Fitness Center</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- MFC Header -->
-    <header class="header">
-      <div class="header-content">
-        <div class="logo" style="display: flex; flex-direction: row">
-          <img
-            src="images/logo.png"
-            alt="Moon Fitness Center Logo"
-            style="height: 50px; width: 90px"
-          />
-          <a href="index.html" class="brand">
-            <span class="brand-name">Moon Fitness Center</span>
-          </a>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+      <!-- MFC Header -->
+      <header class="header">
+        <div class="header-content">
+          <div class="logo" style="display: flex; flex-direction: row">
+            <img
+              src="images/logo.png"
+              alt="Moon Fitness Center Logo"
+              style="height: 50px; width: 90px"
+            />
+            <a href="index.html" class="brand">
+              <span class="brand-name">Moon Fitness Center</span>
+            </a>
+          </div>
+
+          <button class="menu-btn">
+            <i class="fas fa-dumbbell" style="color: #ffd700"></i>
+          </button>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#mfc-trainers-section">Trainers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+            <li>
+              <button 
+              style="border: none; background-color: transparent"
+              id="theme-toggle">
+              <i class="fas fa-moon" id="theme-icon" style="color: #ffd700"></i>
+              </button>
+            </li>
+          </ul>
         </div>
+      </header>
 
-        <button class="menu-btn">
-          <i class="fas fa-dumbbell" style="color: #ffd700"></i>
-        </button>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#mfc-trainers-section">Trainers</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
-          <li><a href="index.html#contact">Contact Us</a></li>
-          <li>
-            <button 
-             style="border: none; background-color: transparent"
-             id="theme-toggle">
-             <i class="fas fa-moon" id="theme-icon" style="color: #ffd700"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </header>
+      <!-- MFC Hero -->
+      <section class="mfc-hero-section">
+        <h1 class="mfc-hero-title" data-aos="fade-up">
+          Welcome to Moon Fitness Center
+        </h1>
+        <p class="mfc-hero-tagline" data-aos="fade-up">
+          Your premier destination for fitness, wellness, and relaxation.
+          Experience a holistic approach to health and fitness like never before.
+        </p>
 
-    <!-- MFC Hero -->
-    <section class="mfc-hero-section">
-      <h1 class="mfc-hero-title" data-aos="fade-up">
-        Welcome to Moon Fitness Center
-      </h1>
-      <p class="mfc-hero-tagline" data-aos="fade-up">
-        Your premier destination for fitness, wellness, and relaxation.
-        Experience a holistic approach to health and fitness like never before.
-      </p>
+        <a href="index.html#contact">
+          <button class="cta-button" data-aos="zoom-in">Contact Us</button></a
+        >
+      </section>
 
-      <a href="index.html#contact">
-        <button class="cta-button" data-aos="zoom-in">Contact Us</button></a
-      >
-    </section>
-
-    <!-- MFC Features -->
-    <section class="mfc-features-slider">
-      <div class="mfc-slider-container">
-        <div class="mfc-slides-wrapper">
-          <!-- Slide 1 -->
-          <div class="mfc-slide active">
-            <div class="mfc-slide-content">
-              <div class="mfc-slide-image">
-                <img src="images/expert.jpg" alt="Expert personal trainer" />
+      <!-- MFC Features -->
+      <section class="mfc-features-slider">
+        <div class="mfc-slider-container">
+          <div class="mfc-slides-wrapper">
+            <!-- Slide 1 -->
+            <div class="mfc-slide active">
+              <div class="mfc-slide-content">
+                <div class="mfc-slide-image">
+                  <img src="images/expert.jpg" alt="Expert personal trainer" />
+                </div>
+                <div class="mfc-slide-text">
+                  <h2>Expert Trainers</h2>
+                  <p>
+                    Our team of certified personal trainers is dedicated to
+                    providing customized workout plans and guidance to help you
+                    reach your fitness goals efficiently and safely.
+                  </p>
+                </div>
               </div>
-              <div class="mfc-slide-text">
-                <h2>Expert Trainers</h2>
-                <p>
-                  Our team of certified personal trainers is dedicated to
-                  providing customized workout plans and guidance to help you
-                  reach your fitness goals efficiently and safely.
-                </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mfc-slide">
+              <div class="mfc-slide-content">
+                <div class="mfc-slide-image">
+                  <img
+                    src="images/Equip/equip-1.jpg"
+                    alt="Modern gym equipment"
+                  />
+                </div>
+                <div class="mfc-slide-text">
+                  <h2>State-of-the-Art Equipment</h2>
+                  <p>
+                    We offer a wide range of the latest gym equipment designed for
+                    all fitness levels, ensuring you have everything you need for
+                    a successful workout.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mfc-slide">
+              <div class="mfc-slide-content">
+                <div class="mfc-slide-image">
+                  <img src="images/relaxation-area.jpg" alt="Relaxation area" />
+                </div>
+                <div class="mfc-slide-text">
+                  <h2>Relaxation Areas</h2>
+                  <p>
+                    Unwind and rejuvenate in our sauna and steam rooms, providing
+                    the perfect complement to your fitness routine and enhancing
+                    your overall well-being.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="mfc-slide">
+              <div class="mfc-slide-content">
+                <div class="mfc-slide-image">
+                  <img src="images/group-class.jpg" alt="Relaxation area" />
+                </div>
+                <div class="mfc-slide-text">
+                  <h2>Group Fitness Classes</h2>
+                  <p>
+                    Our instructor-led group fitness classes are designed to
+                    energize, challenge, and transform! With dynamic workouts that
+                    blend cardio, strength, and endurance training,
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Slide 2 -->
-          <div class="mfc-slide">
-            <div class="mfc-slide-content">
-              <div class="mfc-slide-image">
+          <!-- Navigation Arrows -->
+          <button class="mfc-nav-btn mfc-prev">❮</button>
+          <button class="mfc-nav-btn mfc-next">❯</button>
+          <br />
+          <br />
+          <br />
+          <!-- Dots -->
+          <div class="mfc-slider-dots">
+            <span class="mfc-dot active"></span>
+            <span class="mfc-dot"></span>
+            <span class="mfc-dot"></span>
+            <span class="mfc-dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- MFC Trainers -->
+      <section class="mfc-trainers-section" id="mfc-trainers-section">
+        <div class="mfc-trainers-container">
+          <div class="mfc-trainers-header" data-aos="zoom-in">
+            <h1>Our Expert Trainers</h1>
+            <p>Dedicated to Your Fitness Journey</p>
+          </div>
+
+          <div class="mfc-trainers-grid">
+            <!-- Trainer 1 -->
+            <div class="mfc-trainer-card" data-aos="fade-up">
+              <div class="mfc-trainer-image">
+                <img src="images/trainers/Miller.jpg" alt="Alex Thompson" />
+              </div>
+              <div class="mfc-trainer-info">
+                <h3 class="mfc-trainer-name">Melaku B</h3>
+
+                <p class="mfc-trainer-description">
+                  Certified Fitness Coach & Sport Scientist | Strength Training &
+                  Weight Loss Specialist | Nutrition Advisor
+                </p>
+                <div class="mfc-trainer-social">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-x"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trainer 2 -->
+            <div class="mfc-trainer-card" data-aos="fade-up">
+              <div class="mfc-trainer-image">
+                <img src="images/trainers/andualem.jpg" alt="Andualem Yerga" />
+              </div>
+              <div class="mfc-trainer-info">
+                <h3 class="mfc-trainer-name">Andualem Y</h3>
+                <p class="mfc-trainer-description">
+                  Certified Nutritionist & Personal Trainer | Fitness & Weight
+                  Loss Specialist | Sustainable Weight Management Coach
+                </p>
+                <div class="mfc-trainer-social">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-x"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trainer 3 -->
+            <div class="mfc-trainer-card" data-aos="fade-up">
+              <div class="mfc-trainer-image">
+                <img src="images/trainers/Lakech.jpg" alt="Mike Johnson" />
+              </div>
+              <div class="mfc-trainer-info">
+                <h3 class="mfc-trainer-name">Lakech S</h3>
+                <p class="mfc-trainer-description">
+                  Certified Fitness Trainer | Aerobics, Weightlifting &
+                  Bodybuilding Specialist | Taekwondo Athlete & Coach
+                </p>
+                <div class="mfc-trainer-social">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.youtube.com/@LakechShiferaw"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trainer 4 -->
+            <div class="mfc-trainer-card" data-aos="fade-up">
+              <div class="mfc-trainer-image">
+                <img src="images/trainers/Nahom.jpg" alt="Emma Wilson" />
+              </div>
+              <div class="mfc-trainer-info">
+                <h3 class="mfc-trainer-name">Nahom A</h3>
+                <p class="mfc-trainer-description">
+                  Certified Fitness Trainer & Martial Arts Specialist | Wushu &
+                  Kickboxing Coach | Strength & Conditioning Expert
+                </p>
+                <div class="mfc-trainer-social">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-x"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trainer 5 -->
+            <div class="mfc-trainer-card" data-aos="fade-up">
+              <div class="mfc-trainer-image">
+                <img src="images/trainers/Nolawit.jpg" alt="Emma Wilson" />
+              </div>
+              <div class="mfc-trainer-info">
+                <h3 class="mfc-trainer-name">Nolawit G</h3>
+                <p class="mfc-trainer-description">
+                  Certified Personal Trainer & Fitness Coach | Aerobics & HIIT
+                  Specialist | Functional Training Instructor
+                </p>
+                <div class="mfc-trainer-social">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MFC Pricing  -->
+      <section class="mfc-pricing-section" id="pricing">
+        <div class="mfc-pricing-container">
+          <div class="mfc-pricing-header" data-aos="fade-up">
+            <h2>Moon Fitness Center Pricing</h2>
+            <p>Comprehensive pricing plans for all your fitness needs</p>
+          </div>
+
+          <!-- Membership Plans Table -->
+          <div class="mfc-table-wrapper" data-aos="zoom-in">
+            <h3>Membership Plans</h3>
+            <!-- Pricing Table -->
+            <div class="mfc-table-container">
+              <table class="mfc-pricing-table">
+                <thead>
+                  <tr>
+                    <th>Time Interval</th>
+                    <th>
+                      Full Package<br /><span class="package-desc"
+                        >(Gym, Steam & Sauna, Group Class, Aerobics)</span
+                      >
+                    </th>
+                    <th>
+                      Only Gym & Spa<br /><span class="package-desc"
+                        >(Gym, Steam & Sauna)</span
+                      >
+                    </th>
+                    <th>
+                      Group Class & Gym<br /><span class="package-desc"
+                        >(All Package except Steam & Sauna)</span
+                      >
+                    </th>
+                    <th>Only Gym</th>
+                    <th>
+                      Only Group Class<br /><span class="package-desc"
+                        >(No Gym, No Steam & Sauna, No Weight)</span
+                      >
+                    </th>
+                    <th>
+                      OFF Peak Hours<br /><span class="package-desc"
+                        >(No Group Class, Steam & Sauna, Based on Schedule)</span
+                      >
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 1 month -->
+                  <tr>
+                    <td>1 month</td>
+                    <td>7,950.00</td>
+                    <td>6,949.00</td>
+                    <td>6,248.00</td>
+                    <td>5,492.00</td>
+                    <td>4,505.00</td>
+                    <td>4,748.00</td>
+                  </tr>
+                  <!-- 2 month -->
+                  <tr>
+                    <td>2 month</td>
+                    <td>15,315.00</td>
+                    <td>13,752.00</td>
+                    <td>13,341.00</td>
+                    <td>9,909.00</td>
+                    <td>7,042.00</td>
+                    <td>7,420.00</td>
+                  </tr>
+                  <!-- 3 month -->
+                  <tr>
+                    <td>3 month</td>
+                    <td>19,478.00</td>
+                    <td>17,104.00</td>
+                    <td>15,051.00</td>
+                    <td>14,854.00</td>
+                    <td>11,553.00</td>
+                    <td>13,480.00</td>
+                  </tr>
+                  <!-- 6 month -->
+                  <tr>
+                    <td>6 month</td>
+                    <td>32,102.00</td>
+                    <td>27,033.00</td>
+                    <td>28,172.00</td>
+                    <td>26,957.00</td>
+                    <td>20,885.00</td>
+                    <td>22,136.00</td>
+                  </tr>
+                  <!-- 1 year -->
+                  <tr>
+                    <td>1 year</td>
+                    <td>60,000.00</td>
+                    <td>50,348.00</td>
+                    <td>50,625.00</td>
+                    <td>46,568.00</td>
+                    <td>30,957.00</td>
+                    <td>28,173.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Daily Pass Table -->
+          <div class="mfc-table-wrapper daily-pass" data-aos="zoom-in">
+            <h3>Daily Pass Options</h3>
+            <div class="mfc-table-container">
+              <table class="mfc-pricing-table">
+                <thead>
+                  <tr>
+                    <th>Package Type</th>
+                    <th>Price (per visit)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Steam & Sauna</td>
+                    <td>1,200.00</td>
+                  </tr>
+                  <tr>
+                    <td>Gym & Sauna</td>
+                    <td>1,400.00</td>
+                  </tr>
+                  <tr>
+                    <td>Only Gym</td>
+                    <td>650.00 Per Pax</td>
+                  </tr>
+                  <tr>
+                    <td>Group Class</td>
+                    <td>650.00 Per Pax</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MFC Testimonials -->
+      <section class="mfc-testimonials-section">
+        <div class="mfc-testimonials-container">
+          <div class="mfc-testimonials-header" data-aos="fade-up">
+            <h2>What Our Members Say</h2>
+            <p>
+              Real stories from our valued members about their fitness journey
+              with us
+            </p>
+          </div>
+
+          <div class="mfc-testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="mfc-testimonial-card" data-aos="zoom-in">
+              <div class="mfc-testimonial-quote">"</div>
+              <br />
+              <p class="mfc-testimonial-text">
+                It's one of the best places to keep your health and fitness in
+                check , with a great community and trainers
+              </p>
+              <div class="mfc-testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="mfc-testimonial-author">
+                <div class="mfc-author-info">
+                  <h4>Eyuel Solomon</h4>
+                  <p>Member from 2024/25</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="mfc-testimonial-card" data-aos="zoom-in">
+              <div class="mfc-testimonial-quote">"</div>
+              <br />
+              <p class="mfc-testimonial-text">
+                Not just a gym, but a community. The facilities are top-notch, and
+                the supportive environment makes every workout session enjoyable.
+                Best fitness decision I've made!
+              </p>
+              <div class="mfc-testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="mfc-testimonial-author">
+                <div class="mfc-author-info">
+                  <h4>Ayub Nuru</h4>
+                  <p>Member since 2023</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="mfc-testimonial-card" data-aos="zoom-in">
+              <div class="mfc-testimonial-quote">"</div>
+              <br />
+              <p class="mfc-testimonial-text">
+                The variety of classes and equipment is impressive. I especially
+                love the nutrition guidance that complements my workout routine.
+                It's a complete fitness package!
+              </p>
+              <div class="mfc-testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="mfc-testimonial-author">
+                <div class="mfc-author-info">
+                  <h4>Kalkidan Mekonnen</h4>
+                  <p>Member since 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MFC Why Us? -->
+      <section class="mfc-why-section">
+        <div class="mfc-why-container">
+          <div class="mfc-why-header">
+            <h2>Why Join Us?</h2>
+            <p>
+              Discover the exclusive advantages of being a member at Moon Fitness
+              Center.
+            </p>
+          </div>
+
+          <div class="mfc-why-grid">
+            <!-- Feature 1 -->
+            <div class="mfc-why-feature">
+              <div class="mfc-why-image" data-aos="zoom-in">
                 <img
-                  src="images/Equip/equip-1.jpg"
-                  alt="Modern gym equipment"
+                  src="images/personalized.jpg"
+                  alt="Personalized fitness training"
                 />
               </div>
-              <div class="mfc-slide-text">
-                <h2>State-of-the-Art Equipment</h2>
+              <div class="mfc-why-content" data-aos="fade-up">
+                <h3>Personalized Fitness Plans</h3>
                 <p>
-                  We offer a wide range of the latest gym equipment designed for
-                  all fitness levels, ensuring you have everything you need for
-                  a successful workout.
+                  Our members enjoy personalized fitness assessments and tailored
+                  workout plans designed to help them meet their specific health
+                  and fitness objectives. We believe that each fitness journey is
+                  unique, and we're here to support yours.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="mfc-why-feature reverse">
+              <div class="mfc-why-image" data-aos="zoom-in">
+                <img src="images/flexible.jpg" alt="Gym facilities" />
+              </div>
+              <div class="mfc-why-content" data-aos="fade-up">
+                <h3>Flexible Access</h3>
+                <p>
+                  Enjoy a flexible access to our state-of-the-art facilities,
+                  allowing you to work out on your schedule. Our gym is equipped
+                  with everything you need for a complete fitness experience.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 3 (New Affordable Price Section) -->
+            <div class="mfc-why-feature">
+              <div class="mfc-why-image" data-aos="zoom-in">
+                <img
+                  src="images/Fac/Staff.jpg"
+                  alt="Affordable membership options"
+                />
+              </div>
+              <div class="mfc-why-content" data-aos="fade-up">
+                <h3>Affordable Price</h3>
+                <p>
+                  Experience premium fitness without the premium price tag. Our
+                  flexible membership options are designed to fit your budget,
+                  offering incredible value with no compromise on quality or
+                  services.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="mfc-why-feature reverse">
+              <div class="mfc-why-image" data-aos="zoom-in">
+                <img src="images/Community.jpg" alt="Gym facilities" />
+              </div>
+              <div class="mfc-why-content" data-aos="fade-up">
+                <h3>Community and Support</h3>
+                <p>
+                  Join a vibrant community of fitness enthusiasts. Our members
+                  benefit from a supportive environment, regular events, and
+                  workshops that encourage motivation and camaraderie throughout
+                  your fitness journey.
                 </p>
               </div>
             </div>
           </div>
-
-          <!-- Slide 3 -->
-          <div class="mfc-slide">
-            <div class="mfc-slide-content">
-              <div class="mfc-slide-image">
-                <img src="images/relaxation-area.jpg" alt="Relaxation area" />
-              </div>
-              <div class="mfc-slide-text">
-                <h2>Relaxation Areas</h2>
-                <p>
-                  Unwind and rejuvenate in our sauna and steam rooms, providing
-                  the perfect complement to your fitness routine and enhancing
-                  your overall well-being.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="mfc-slide">
-            <div class="mfc-slide-content">
-              <div class="mfc-slide-image">
-                <img src="images/group-class.jpg" alt="Relaxation area" />
-              </div>
-              <div class="mfc-slide-text">
-                <h2>Group Fitness Classes</h2>
-                <p>
-                  Our instructor-led group fitness classes are designed to
-                  energize, challenge, and transform! With dynamic workouts that
-                  blend cardio, strength, and endurance training,
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
+      </section>
 
-        <!-- Navigation Arrows -->
-        <button class="mfc-nav-btn mfc-prev">❮</button>
-        <button class="mfc-nav-btn mfc-next">❯</button>
-        <br />
-        <br />
-        <br />
-        <!-- Dots -->
-        <div class="mfc-slider-dots">
-          <span class="mfc-dot active"></span>
-          <span class="mfc-dot"></span>
-          <span class="mfc-dot"></span>
-          <span class="mfc-dot"></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- MFC Trainers -->
-    <section class="mfc-trainers-section" id="mfc-trainers-section">
-      <div class="mfc-trainers-container">
-        <div class="mfc-trainers-header" data-aos="zoom-in">
-          <h1>Our Expert Trainers</h1>
-          <p>Dedicated to Your Fitness Journey</p>
-        </div>
-
-        <div class="mfc-trainers-grid">
-          <!-- Trainer 1 -->
-          <div class="mfc-trainer-card" data-aos="fade-up">
-            <div class="mfc-trainer-image">
-              <img src="images/trainers/Miller.jpg" alt="Alex Thompson" />
-            </div>
-            <div class="mfc-trainer-info">
-              <h3 class="mfc-trainer-name">Melaku B</h3>
-
-              <p class="mfc-trainer-description">
-                Certified Fitness Coach & Sport Scientist | Strength Training &
-                Weight Loss Specialist | Nutrition Advisor
-              </p>
-              <div class="mfc-trainer-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-x"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Trainer 2 -->
-          <div class="mfc-trainer-card" data-aos="fade-up">
-            <div class="mfc-trainer-image">
-              <img src="images/trainers/andualem.jpg" alt="Andualem Yerga" />
-            </div>
-            <div class="mfc-trainer-info">
-              <h3 class="mfc-trainer-name">Andualem Y</h3>
-              <p class="mfc-trainer-description">
-                Certified Nutritionist & Personal Trainer | Fitness & Weight
-                Loss Specialist | Sustainable Weight Management Coach
-              </p>
-              <div class="mfc-trainer-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-x"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Trainer 3 -->
-          <div class="mfc-trainer-card" data-aos="fade-up">
-            <div class="mfc-trainer-image">
-              <img src="images/trainers/Lakech.jpg" alt="Mike Johnson" />
-            </div>
-            <div class="mfc-trainer-info">
-              <h3 class="mfc-trainer-name">Lakech S</h3>
-              <p class="mfc-trainer-description">
-                Certified Fitness Trainer | Aerobics, Weightlifting &
-                Bodybuilding Specialist | Taekwondo Athlete & Coach
-              </p>
-              <div class="mfc-trainer-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-x"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Trainer 4 -->
-          <div class="mfc-trainer-card" data-aos="fade-up">
-            <div class="mfc-trainer-image">
-              <img src="images/trainers/Nahom.jpg" alt="Emma Wilson" />
-            </div>
-            <div class="mfc-trainer-info">
-              <h3 class="mfc-trainer-name">Nahom A</h3>
-              <p class="mfc-trainer-description">
-                Certified Fitness Trainer & Martial Arts Specialist | Wushu &
-                Kickboxing Coach | Strength & Conditioning Expert
-              </p>
-              <div class="mfc-trainer-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-x"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Trainer 5 -->
-          <div class="mfc-trainer-card" data-aos="fade-up">
-            <div class="mfc-trainer-image">
-              <img src="images/trainers/Nolawit.jpg" alt="Emma Wilson" />
-            </div>
-            <div class="mfc-trainer-info">
-              <h3 class="mfc-trainer-name">Nolawit G</h3>
-              <p class="mfc-trainer-description">
-                Certified Personal Trainer & Fitness Coach | Aerobics & HIIT
-                Specialist | Functional Training Instructor
-              </p>
-              <div class="mfc-trainer-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-x"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MFC Pricing  -->
-    <section class="mfc-pricing-section" id="pricing">
-      <div class="mfc-pricing-container">
-        <div class="mfc-pricing-header" data-aos="fade-up">
-          <h2>Moon Fitness Center Pricing</h2>
-          <p>Comprehensive pricing plans for all your fitness needs</p>
-        </div>
-
-        <!-- Membership Plans Table -->
-        <div class="mfc-table-wrapper" data-aos="zoom-in">
-          <h3>Membership Plans</h3>
-          <!-- Pricing Table -->
-          <div class="mfc-table-container">
-            <table class="mfc-pricing-table">
-              <thead>
-                <tr>
-                  <th>Time Interval</th>
-                  <th>
-                    Full Package<br /><span class="package-desc"
-                      >(Gym, Steam & Sauna, Group Class, Aerobics)</span
-                    >
-                  </th>
-                  <th>
-                    Only Gym & Spa<br /><span class="package-desc"
-                      >(Gym, Steam & Sauna)</span
-                    >
-                  </th>
-                  <th>
-                    Group Class & Gym<br /><span class="package-desc"
-                      >(All Package except Steam & Sauna)</span
-                    >
-                  </th>
-                  <th>Only Gym</th>
-                  <th>
-                    Only Group Class<br /><span class="package-desc"
-                      >(No Gym, No Steam & Sauna, No Weight)</span
-                    >
-                  </th>
-                  <th>
-                    OFF Peak Hours<br /><span class="package-desc"
-                      >(No Group Class, Steam & Sauna, Based on Schedule)</span
-                    >
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- 1 month -->
-                <tr>
-                  <td>1 month</td>
-                  <td>7,950.00</td>
-                  <td>6,949.00</td>
-                  <td>6,248.00</td>
-                  <td>5,492.00</td>
-                  <td>4,505.00</td>
-                  <td>4,748.00</td>
-                </tr>
-                <!-- 2 month -->
-                <tr>
-                  <td>2 month</td>
-                  <td>15,315.00</td>
-                  <td>13,752.00</td>
-                  <td>13,341.00</td>
-                  <td>9,909.00</td>
-                  <td>7,042.00</td>
-                  <td>7,420.00</td>
-                </tr>
-                <!-- 3 month -->
-                <tr>
-                  <td>3 month</td>
-                  <td>19,478.00</td>
-                  <td>17,104.00</td>
-                  <td>15,051.00</td>
-                  <td>14,854.00</td>
-                  <td>11,553.00</td>
-                  <td>13,480.00</td>
-                </tr>
-                <!-- 6 month -->
-                <tr>
-                  <td>6 month</td>
-                  <td>32,102.00</td>
-                  <td>27,033.00</td>
-                  <td>28,172.00</td>
-                  <td>26,957.00</td>
-                  <td>20,885.00</td>
-                  <td>22,136.00</td>
-                </tr>
-                <!-- 1 year -->
-                <tr>
-                  <td>1 year</td>
-                  <td>60,000.00</td>
-                  <td>50,348.00</td>
-                  <td>50,625.00</td>
-                  <td>46,568.00</td>
-                  <td>30,957.00</td>
-                  <td>28,173.00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Daily Pass Table -->
-        <div class="mfc-table-wrapper daily-pass" data-aos="zoom-in">
-          <h3>Daily Pass Options</h3>
-          <div class="mfc-table-container">
-            <table class="mfc-pricing-table">
-              <thead>
-                <tr>
-                  <th>Package Type</th>
-                  <th>Price (per visit)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Steam & Sauna</td>
-                  <td>1,200.00</td>
-                </tr>
-                <tr>
-                  <td>Gym & Sauna</td>
-                  <td>1,400.00</td>
-                </tr>
-                <tr>
-                  <td>Only Gym</td>
-                  <td>650.00 Per Pax</td>
-                </tr>
-                <tr>
-                  <td>Group Class</td>
-                  <td>650.00 Per Pax</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MFC Testimonials -->
-    <section class="mfc-testimonials-section">
-      <div class="mfc-testimonials-container">
-        <div class="mfc-testimonials-header" data-aos="fade-up">
-          <h2>What Our Members Say</h2>
-          <p>
-            Real stories from our valued members about their fitness journey
-            with us
-          </p>
-        </div>
-
-        <div class="mfc-testimonials-grid">
-          <!-- Testimonial 1 -->
-          <div class="mfc-testimonial-card" data-aos="zoom-in">
-            <div class="mfc-testimonial-quote">"</div>
-            <br />
-            <p class="mfc-testimonial-text">
-              It's one of the best places to keep your health and fitness in
-              check , with a great community and trainers
-            </p>
-            <div class="mfc-testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="mfc-testimonial-author">
-              <div class="mfc-author-info">
-                <h4>Eyuel Solomon</h4>
-                <p>Member from 2024/25</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div class="mfc-testimonial-card" data-aos="zoom-in">
-            <div class="mfc-testimonial-quote">"</div>
-            <br />
-            <p class="mfc-testimonial-text">
-              Not just a gym, but a community. The facilities are top-notch, and
-              the supportive environment makes every workout session enjoyable.
-              Best fitness decision I've made!
-            </p>
-            <div class="mfc-testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="mfc-testimonial-author">
-              <div class="mfc-author-info">
-                <h4>Ayub Nuru</h4>
-                <p>Member since 2023</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="mfc-testimonial-card" data-aos="zoom-in">
-            <div class="mfc-testimonial-quote">"</div>
-            <br />
-            <p class="mfc-testimonial-text">
-              The variety of classes and equipment is impressive. I especially
-              love the nutrition guidance that complements my workout routine.
-              It's a complete fitness package!
-            </p>
-            <div class="mfc-testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="mfc-testimonial-author">
-              <div class="mfc-author-info">
-                <h4>Kalkidan Mekonnen</h4>
-                <p>Member since 2024</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MFC Why Us? -->
-    <section class="mfc-why-section">
-      <div class="mfc-why-container">
+      <!-- MFC Google Map Location -->
+      <section class="mfc-location">
         <div class="mfc-why-header">
-          <h2>Why Join Us?</h2>
-          <p>
-            Discover the exclusive advantages of being a member at Moon Fitness
-            Center.
-          </p>
+          <h2>Our Location</h2>
         </div>
 
-        <div class="mfc-why-grid">
-          <!-- Feature 1 -->
-          <div class="mfc-why-feature">
-            <div class="mfc-why-image" data-aos="zoom-in">
-              <img
-                src="images/personalized.jpg"
-                alt="Personalized fitness training"
-              />
-            </div>
-            <div class="mfc-why-content" data-aos="fade-up">
-              <h3>Personalized Fitness Plans</h3>
+        <iframe
+          id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d411.18407927715134!2d38.78376221126487!3d8.952877955043682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b83001f64df1f%3A0x493c1bc129ef7e03!2sMoon%20Building%20%7C%20Bulbula!5e1!3m2!1sen!2set!4v1751882944629!5m2!1sen!2set"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <!-- MFC Footer -->
+      <footer class="mfc-footer">
+        <div class="mfc-footer-container">
+          <div class="mfc-footer-grid">
+            <!-- Brand Column -->
+            <div class="mfc-footer-column brand-col">
+              <div class="mfc-footer-brand">
+                <img
+                  src="images/logo.png"
+                  alt="Moon Fitness Center Logo"
+                  class="mfc-logo"
+                />
+                <h3>Moon Fitness Center</h3>
+              </div>
               <p>
-                Our members enjoy personalized fitness assessments and tailored
-                workout plans designed to help them meet their specific health
-                and fitness objectives. We believe that each fitness journey is
-                unique, and we're here to support yours.
+                Your premier destination for fitness, wellness, and relaxation.
+                Experience a holistic approach to health and fitness like never
+                before.
               </p>
+              <div class="mfc-footer-social">
+                <a href="https://t.me/MOON261911" class="social-icon">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/moon_fitnessandwelness/"
+                  class="social-icon"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.tiktok.com/discover/moon-fitness-bole-bulbula"
+                  class="social-icon"
+                >
+                  <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/@LakechShiferaw" class="social-icon">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Contact Info -->
+            <div class="mfc-footer-column" id="contact">
+              <h4>Contact Us</h4>
+              <ul class="mfc-footer-contact">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  Bole Bulbula, Mariam Mazoriya
+                </li>
+                <li>
+                  <i class="fas fa-phone"></i>
+                  +(251) 911 261 911 <span style="color: #d4af37">/</span> +(251)
+                  911 207 535
+                </li>
+                <li><i class="fas fa-envelope"></i> nuruahm2020@gmail.com</li>
+              </ul>
             </div>
           </div>
 
-          <!-- Feature 2 -->
-          <div class="mfc-why-feature reverse">
-            <div class="mfc-why-image" data-aos="zoom-in">
-              <img src="images/flexible.jpg" alt="Gym facilities" />
-            </div>
-            <div class="mfc-why-content" data-aos="fade-up">
-              <h3>Flexible Access</h3>
-              <p>
-                Enjoy a flexible access to our state-of-the-art facilities,
-                allowing you to work out on your schedule. Our gym is equipped
-                with everything you need for a complete fitness experience.
-              </p>
-            </div>
-          </div>
-
-          <!-- Feature 3 (New Affordable Price Section) -->
-          <div class="mfc-why-feature">
-            <div class="mfc-why-image" data-aos="zoom-in">
-              <img
-                src="images/Fac/Staff.jpg"
-                alt="Affordable membership options"
-              />
-            </div>
-            <div class="mfc-why-content" data-aos="fade-up">
-              <h3>Affordable Price</h3>
-              <p>
-                Experience premium fitness without the premium price tag. Our
-                flexible membership options are designed to fit your budget,
-                offering incredible value with no compromise on quality or
-                services.
-              </p>
-            </div>
-          </div>
-
-          <!-- Feature 4 -->
-          <div class="mfc-why-feature reverse">
-            <div class="mfc-why-image" data-aos="zoom-in">
-              <img src="images/Community.jpg" alt="Gym facilities" />
-            </div>
-            <div class="mfc-why-content" data-aos="fade-up">
-              <h3>Community and Support</h3>
-              <p>
-                Join a vibrant community of fitness enthusiasts. Our members
-                benefit from a supportive environment, regular events, and
-                workshops that encourage motivation and camaraderie throughout
-                your fitness journey.
-              </p>
-            </div>
+          <!-- Bottom Bar -->
+          <div class="mfc-footer-bottom">
+            <p>&copy; 2025 Moon Fitness Center. All rights reserved.</p>
           </div>
         </div>
-      </div>
-    </section>
+      </footer>
 
-    <!-- MFC Google Map Location -->
-    <section class="mfc-location">
-      <div class="mfc-why-header">
-        <h2>Our Location</h2>
-      </div>
+      <!-- AOS JavaScript Initialization -->
+      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+          offset: 100,
+          once: true,
+        });
 
-      <iframe
-        id="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d411.18407927715134!2d38.78376221126487!3d8.952877955043682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b83001f64df1f%3A0x493c1bc129ef7e03!2sMoon%20Building%20%7C%20Bulbula!5e1!3m2!1sen!2set!4v1751882944629!5m2!1sen!2set"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-
-    <!-- MFC Footer -->
-    <footer class="mfc-footer">
-      <div class="mfc-footer-container">
-        <div class="mfc-footer-grid">
-          <!-- Brand Column -->
-          <div class="mfc-footer-column brand-col">
-            <div class="mfc-footer-brand">
-              <img
-                src="images/logo.png"
-                alt="Moon Fitness Center Logo"
-                class="mfc-logo"
-              />
-              <h3>Moon Fitness Center</h3>
-            </div>
-            <p>
-              Your premier destination for fitness, wellness, and relaxation.
-              Experience a holistic approach to health and fitness like never
-              before.
-            </p>
-            <div class="mfc-footer-social">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/moon_fitnessandwelness/"
-                class="social-icon"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.tiktok.com/discover/moon-fitness-bole-bulbula"
-                class="social-icon"
-              >
-                <i class="fab fa-tiktok"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <!-- Contact Info -->
-          <div class="mfc-footer-column" id="contact">
-            <h4>Contact Us</h4>
-            <ul class="mfc-footer-contact">
-              <li>
-                <i class="fas fa-map-marker-alt"></i>
-                Bole Bulbula, Mariam Mazoriya
-              </li>
-              <li>
-                <i class="fas fa-phone"></i>
-                +(251) 911 261 911 <span style="color: #d4af37">/</span> +(251)
-                911 207 535
-              </li>
-              <li><i class="fas fa-envelope"></i> nuruahm2020@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div class="mfc-footer-bottom">
-          <p>&copy; 2025 Moon Fitness Center. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- AOS JavaScript Initialization -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        offset: 100,
-        once: true,
-      });
-
-    </script>
-    <script src="js/app.js"></script>
-  </body>
-</html>
+      </script>
+      <script src="js/app.js"></script>
+    </body>
+  </html>
