@@ -46,7 +46,15 @@ function loadTheme() {
 function toggleTheme() {
     const currentTheme = localStorage.getItem('theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light'; 
+    const toggleIcon = document.querySelector('#theme-icon');
     setTheme(newTheme);
+    if (newTheme === 'light') {
+        toggleIcon.classList.remove('fa-sun'); // Remove sun icon
+        toggleIcon.classList.add('fa-moon'); // Add moon icon
+    } else {
+        toggleIcon.classList.remove('fa-moon'); // Remove moon icon
+        toggleIcon.classList.add('fa-sun'); // Add sun icon
+    }
     bgchange()
 }
 
