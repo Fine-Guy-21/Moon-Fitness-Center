@@ -14,32 +14,52 @@ document.addEventListener('click', (e) => {
     }
 });
 
-
-
 // Header transparency on scroll
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
-
+    
     // Get the computed style of the root element
     const rootStyles = getComputedStyle(document.documentElement);
     
     // Get the CSS variables
     const stickyBg = rootStyles.getPropertyValue('--header-bg').trim();
-    const headerText = rootStyles.getPropertyValue('--white')
 
     if (window.scrollY > 50) {
-        header.style.background = stickyBg; // Use the sticky background color
+        header.style.background = stickyBg; 
     } else {
-        header.style.background = 'none'; // Use the transparent background
+        header.style.background = 'none'; 
     }
 });
 
+// Theme Toggle Functionality
 
-// Section 2
+function setTheme(theme) {
+    document.documentElement.className = theme; 
+    localStorage.setItem('theme', theme); 
+}
 
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'dark'; 
+    setTheme(savedTheme);
+}
+
+function toggleTheme() {
+    const currentTheme = localStorage.getItem('theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light'; 
+    setTheme(newTheme);
+    bgchange()
+}
+
+// Event listener for theme toggle button
 document.addEventListener('DOMContentLoaded', () => {
+    loadTheme(); 
 
-
+    const themeToggleButton = document.querySelector('#theme-toggle'); 
+    if (themeToggleButton) {
+        themeToggleButton.addEventListener('click', toggleTheme); 
+    }
+    
+    // Section 2
     
     const slides = document.querySelectorAll('.mfc-slide');
     const dots = document.querySelectorAll('.mfc-dot');
@@ -76,8 +96,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Auto slide every 5 seconds
+    // Auto slide every 30 seconds
     setInterval(nextSlide, 30000);
 });
 
+function bgchange(){
+    const header = document.querySelector('.header');
+    
+    // Get the computed style of the root element
+    const rootStyles = getComputedStyle(document.documentElement);
+    
+    // Get the CSS variables
+    const stickyBg = rootStyles.getPropertyValue('--header-bg').trim();
 
+    header.style.background = stickyBg; 
+    
+}

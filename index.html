@@ -42,7 +42,13 @@
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="index.html#pricing">Pricing</a></li>
           <li><a href="index.html#contact">Contact Us</a></li>
-          <li><button onclick="toggleTheme()">T</button></li>
+          <li>
+            <button 
+             style="border: none; background-color: transparent"
+             id="theme-toggle">
+             <i class="fas fa-sun" id="theme-icon" style="color: #ffd700"></i>
+            </button>
+          </li>
         </ul>
       </div>
     </header>
@@ -56,7 +62,7 @@
         Your premier destination for fitness, wellness, and relaxation.
         Experience a holistic approach to health and fitness like never before.
       </p>
-      
+
       <a href="index.html#contact">
         <button class="cta-button" data-aos="zoom-in">Contact Us</button></a
       >
@@ -350,7 +356,7 @@
                 </tr>
                 <!-- 1 year -->
                 <tr>
-                  <td>1  year</td>
+                  <td>1 year</td>
                   <td>60,000.00</td>
                   <td>50,348.00</td>
                   <td>50,625.00</td>
@@ -659,11 +665,7 @@
         offset: 100,
         once: true,
       });
-      const root = document.documentElement;
 
-      function toggleTheme() {
-        root.classList.toggle("light");
-      }
     </script>
     <script src="js/app.js"></script>
   </body>
