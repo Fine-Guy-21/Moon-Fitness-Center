@@ -12,24 +12,18 @@
 :root {
   --primary-dark: #1a1a1a;
   --secondary-dark: #2a2a2a;
-  --header-bg:#3a3a3a;
   --gold: #d4af37;
   --gold-hover: #bf9f30;
   --white: white;
-  --primaryText: #ffffff;
-  --secondaryText: #8a8a8a;
 }
 
-:root.light {
-  --primary-dark: #dbdbdb;
-  --secondary-dark: #bbbbbb; 
-  --header-bg:#8a8a8a;
-  --gold: #d4af37; 
-  --gold-hover: #bf9f30; /* Optional: keep the same */
-  --white: #000000; /* Example light theme color */
-}
-
-
+/* :root {
+  --primary-dark: #f3efe8;
+  --secondary-dark: #c4c4bf;
+  --gold: #d4af37;
+  --gold-hover: #bf9f30;
+} 
+ */
 html {
   scroll-behavior: smooth;
 }
@@ -39,8 +33,9 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--header-bg);
   padding: 20px 50px;
+  background: rgba(26, 26, 26, 0.8);
+  /* backdrop-filter: blur(8px); */
   z-index: 1000;
   transition: all 0.3s ease;
 }
@@ -116,7 +111,7 @@ html {
   height: 100vh;
   /* background:url("../images/index-gyms.jpg"); */
   background: url("../images/index-gym.jpg");
-  filter: brightness(0.85);
+  filter: brightness(0.65);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -130,14 +125,14 @@ html {
 
 .mfc-hero-tagline {
   font-size: 1.2rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   max-width: 800px;
 }
 
 .mfc-hero-title {
   font-size: 3.5rem;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .mfc-hero-section a {
@@ -549,7 +544,6 @@ html {
   border-collapse: separate;
   border-spacing: 0;
   white-space: nowrap;
-  text-wrap: auto;
 }
 
 .mfc-pricing-table th,

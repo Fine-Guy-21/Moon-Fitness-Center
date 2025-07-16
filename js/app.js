@@ -14,26 +14,16 @@ document.addEventListener('click', (e) => {
     }
 });
 
-
-
 // Header transparency on scroll
 window.addEventListener('scroll', () => {
+    // console.log(window.scrollY);
     const header = document.querySelector('.header');
-
-    // Get the computed style of the root element
-    const rootStyles = getComputedStyle(document.documentElement);
-    
-    // Get the CSS variables
-    const stickyBg = rootStyles.getPropertyValue('--header-bg').trim();
-    const headerText = rootStyles.getPropertyValue('--white')
-
     if (window.scrollY > 50) {
-        header.style.background = stickyBg; // Use the sticky background color
+        header.style.background = 'rgba(26, 26, 26, 0.95)';
     } else {
-        header.style.background = 'none'; // Use the transparent background
+        header.style.background = 'none';
     }
 });
-
 
 // Section 2
 
