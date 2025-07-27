@@ -134,7 +134,7 @@ html {
 
 .mfc-hero-section {
   height: 100vh;
-  /* background:url("../images/index-gyms.jpg"); */
+  margin-top:50px;
   background: url("../images/index-gym.jpg");
   filter: brightness(0.85);
   background-size: cover;

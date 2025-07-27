@@ -24,11 +24,11 @@ window.addEventListener('scroll', () => {
     // Get the CSS variables
     const stickyBg = rootStyles.getPropertyValue('--header-bg').trim();
 
-    if (window.scrollY > 50) {
-        header.style.background = stickyBg; 
-    } else {
-        header.style.background = 'none'; 
-    }
+    // if (window.scrollY > 50) {
+    //     header.style.background = stickyBg; 
+    // } else {
+    //     header.style.background = 'none'; 
+    // }
 });
 
 // Theme Toggle Functionality
